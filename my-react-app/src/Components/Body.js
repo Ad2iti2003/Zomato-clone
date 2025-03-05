@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import FoodImage from "../Image/food2.jpg";
+import { ArrowForwardRounded } from '@mui/icons-material';
 
 function Body() {
   return (
@@ -28,6 +29,29 @@ function Body() {
         </CardContent>
       </CardActionArea>
     </Card>
+
+    <Box>
+      <h1 className='text-4xl font-thin text-gray-800 text-ellipsis'>Popular localities in and around <b className='text-gray-900'>Chhindwara</b></h1>
+      <Card sx={{ maxWidth: 360, boxShadow: 3, borderRadius: 2 , marginBottom: 10, marginTop: 5 }}>
+        <CardActionArea>
+          <CardContent className='flex justify-between'>
+          <Box>
+          <Typography gutterBottom variant="p" component="div">
+          Chhindwara Locality
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            202 places
+          </Typography>
+          </Box>
+          <Box>
+            <ArrowForwardRounded/>
+
+          </Box>
+
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Box>
     </Box>
   )
 }
