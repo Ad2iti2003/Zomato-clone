@@ -16,3 +16,34 @@ Payments: Stripe / Razorpay
 
 Cloud: Cloudinary (images)
 
+Core Features (MVP)
+# AI Food Recommendation System
+## User
+
+Signup / Login (JWT)
+
+Browse restaurants
+
+Search & filter food
+
+Add to cart
+
+Place order
+
+Live order status
+
+## Restaurant
+
+Restaurant dashboard
+
+Menu management
+
+Order management
+
+## Admin
+
+Approve restaurants
+
+Manage users & orders
+
+Analytics dashboard
