@@ -128,13 +128,22 @@ Fine-tuned prompts
 Integrated into React UI
 
 zomato-clone/
+
 │
-├── client/        # React
+
+├── client/  # React
+
 ├── server/        # Node + Express
+
 ├── ai-service/    # Python ML
+
 │   ├── model.py
+
 │   ├── app.py
+
 │
+
 ├── docker-compose.yml
+
 └── README.md
 
