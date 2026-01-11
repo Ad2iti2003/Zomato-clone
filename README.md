@@ -47,3 +47,94 @@ Approve restaurants
 Manage users & orders
 
 Analytics dashboard
+### React → Node API → Python ML service → MongoDB
+
+# AI Search (Natural Language Search) ⭐⭐⭐⭐
+
+“Show spicy Chinese food under ₹300”
+
+### How:
+
+Use NLP
+
+Extract:
+
+Cuisine
+
+Price
+
+Spice level
+
+Convert text → MongoDB query
+
+### Tools:
+
+spaCy / Transformers
+
+FastAPI (Python microservice)
+
+# Sentiment Analysis on Reviews ⭐⭐⭐⭐
+
+## Analyze reviews like:
+
+“Food was amazing but delivery was slow”
+
+## Output:
+
+Food sentiment: Positive
+
+Delivery sentiment: Neutral/Negative
+
+## Tech:
+
+Pretrained BERT
+
+HuggingFace
+
+Store sentiment scores in DB
+
+# Dynamic Pricing / Discount Prediction ⭐⭐⭐⭐⭐
+
+## AI suggests:
+
+Discounts during low demand
+
+Surge pricing during peak hours
+
+## Features used:
+
+Time
+
+Day
+
+Weather
+
+Past order volume
+
+## Model:
+
+Regression (XGBoost / Linear Regression)
+
+# AI Chatbot (Food Assistant) ⭐⭐⭐⭐
+
+“What should I eat today?”
+
+## Tech:
+
+OpenAI API / LLaMA
+
+Fine-tuned prompts
+
+Integrated into React UI
+
+zomato-clone/
+│
+├── client/        # React
+├── server/        # Node + Express
+├── ai-service/    # Python ML
+│   ├── model.py
+│   ├── app.py
+│
+├── docker-compose.yml
+└── README.md
+
