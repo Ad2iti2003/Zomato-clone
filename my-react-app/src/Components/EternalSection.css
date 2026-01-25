@@ -1,0 +1,95 @@
+.eternal-container {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.eternal-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.eternal-subtitle {
+  color: #7a869a;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+
+/* Cards Grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card */
+.brand-card {
+  padding: 35px 25px;
+  border-radius: 28px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Logo */
+.brand-card img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+/* Title */
+.brand-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.brand-card p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Link */
+.link {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.arrow {
+  color: red;
+  margin-left: 6px;
+}
+
+/* Background Colors */
+.brand-card.pink {
+  background: #ffe6ea;
+}
+
+.brand-card.yellow {
+  background: #fff6d6;
+}
+
+.brand-card.purple {
+  background: #f0e8ff;
+}
+
+.brand-card.red {
+  background: #ffeaea;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 260px);
+  }
+}

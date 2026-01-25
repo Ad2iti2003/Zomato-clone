@@ -1,0 +1,92 @@
+.body {
+  position: relative;
+  min-height: 100vh;              /* Full screen height */
+  width: 100%;
+  background-image: url("../Image/background1.avif");
+  background-size: cover;         /* Cover full screen */
+  background-position: center;    /* Center the image */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85); /* light overlay */
+  z-index: 1;
+}
+
+/* Make content appear above overlay */
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.body-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ef4f5f;
+}
+
+.body-content p {
+  margin-top: 1rem;
+  color: #6b7280;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Floating food images */
+.food {
+  position: absolute;
+  width: 140px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.burger {
+  left: 10%;
+  top: 45%;
+}
+
+.pizza {
+  right: 10%;
+  top: 55%;
+}
+
+.momos {
+  right: 12%;
+  top: 15%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Stats Card */
+.stats {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;
+  background: #fff;
+  padding: 1.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stat h3 {
+  color: #374151;
+  font-size: 1.5rem;
+}
+
+.stat span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
